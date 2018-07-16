@@ -13,7 +13,7 @@ OBS Studio Setup
 4) Add a new Color Key Effect Filter with the following settings:
 * Key Color `#0033cc`
 * Similarity `362`
-* Key Color `204`
+* Smoothness `204`
 
 5) Close the Filters window and place/size the tracker in your scene.
 
