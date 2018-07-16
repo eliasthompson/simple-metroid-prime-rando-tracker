@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 568 448.5">
+  <title>supermissile</title>
+  <path fill="#ffb508" d="M978.5,932.5v131S976,1107,1010,1140c34.5,33.49,76.5,31.5,76.5,31.5h135v-108h-135v-131Z" transform="translate(-748 -932.5)"/>
+  <path fill="#ffb508" d="M1086,1381V1250s2.5-43.5-31.5-76.5C1020,1140,978,1142,978,1142H843v108H978v131Z" transform="translate(-748 -932.5)"/>
+  <rect fill="#666666" x="483" y="130.5" width="85" height="109"/>
+  <rect fill="#666666" y="209.5" width="85" height="109"/>
+</svg>

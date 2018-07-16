@@ -1,0 +1,126 @@
+@font-face {
+  font-family: 'Logbook Prime';
+  font-weight: 400;
+  src: url('../fonts/LogbookPrime-Regular.ttf') format('truetype');
+}
+
+* {
+	margin: 0px;
+	border: 0px;
+	padding: 0px;
+}
+
+body {
+	width: 192px;
+  height: 218px;
+	display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+	font-family: 'Logbook Prime';
+	color: #FFFFFF;
+  background: #0033cc;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#timer {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 7px 7px;
+  cursor: pointer;
+  text-align: right;
+  font-size: 30px;
+  width: 100%;
+  height: 26px;
+}
+
+#timer > div:not(.overlay) {
+  letter-spacing: 2px;
+}
+
+#timer > div:not(.overlay) > span.small {
+  font-size: 20px;
+}
+
+#timer > .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.tracker {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
+  padding-bottom: 7px;
+}
+
+.row {
+	display: flex;
+	text-align: center;
+  box-sizing: border-box;
+	padding: 7px 7px 0 0;
+}
+
+.col {
+	display: flex;
+	flex-direction: column;
+}
+
+.col > .row {
+	padding-right: 0;
+}
+
+.col > .row:first-of-type {
+	padding-top: 0;
+}
+
+.item,
+.items {
+	display: flex;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	text-align: center;
+  user-select: none;
+}
+
+.item {
+	padding-left: 7px;
+}
+
+.items {
+	width: 30px;
+  height: 30px;
+	cursor: pointer;
+}
+
+.artifacts {
+	width: 67px;
+  height: 67px;
+}
+
+.artifacts .artifact {
+	fill: #39d3f9;
+	cursor: pointer;
+}
+
+.artifacts .artifact.selected {
+	fill: #f9ac39;
+}
+
+.hidden {
+	display: none;
+}
+
+.grayscale {
+  filter: brightness(50%) grayscale(100%);
+}
