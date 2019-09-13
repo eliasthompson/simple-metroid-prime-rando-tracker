@@ -8,7 +8,7 @@ OBS Studio Setup
 
 2) Select the tab in your browser that has the tracker open. Hit OK.
 
-3) Right-click your tracker source and selete Filters.
+3) Right-click your tracker source and select Filters.
 
 4) Add a new Color Key Effect Filter with the following settings:
 * Key Color `#0033cc`

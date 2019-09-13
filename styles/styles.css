@@ -11,15 +11,15 @@
 }
 
 body {
-	width: 192px;
-  height: 218px;
+	width: 384px;
+  height: 436px;
 	display: flex;
   flex-direction: column;
   align-items: center;
   align-content: center;
 	font-family: 'Logbook Prime';
 	color: #FFFFFF;
-  background: #0033cc;
+  /* background: #0033cc; */
 }
 
 img {
@@ -31,21 +31,20 @@ img {
   position: relative;
   box-sizing: border-box;
   display: flex;
+  align-items: baseline;
+  align-content: baseline;
   justify-content: flex-end;
-  padding: 0 7px 7px;
+  padding: 0 14px 14px;
   cursor: pointer;
   text-align: right;
-  font-size: 30px;
+  letter-spacing: 4px;
+  font-size: 60px;
   width: 100%;
-  height: 26px;
+  height: 54px;
 }
 
-#timer > div:not(.overlay) {
-  letter-spacing: 2px;
-}
-
-#timer > div:not(.overlay) > span.small {
-  font-size: 20px;
+#timer > span.small {
+  font-size: 40px;
 }
 
 #timer > .overlay {
@@ -60,14 +59,14 @@ img {
   flex-direction: column;
   box-sizing: border-box;
   width: 100%;
-  padding-bottom: 7px;
+  padding-bottom: 14px;
 }
 
 .row {
 	display: flex;
 	text-align: center;
   box-sizing: border-box;
-	padding: 7px 7px 0 0;
+	padding: 14px 14px 0 0;
 }
 
 .col {
@@ -94,23 +93,23 @@ img {
 }
 
 .item {
-	padding-left: 7px;
+	padding-left: 14px;
 }
 
 .items {
-	width: 30px;
-  height: 30px;
+	width: 60px;
+  height: 60px;
 	cursor: pointer;
 }
 
 .artifacts {
-	width: 67px;
-  height: 67px;
+	width: 134px;
+  height: 134px;
+	cursor: pointer;
 }
 
 .artifacts .artifact {
 	fill: #39d3f9;
-	cursor: pointer;
 }
 
 .artifacts .artifact.selected {
