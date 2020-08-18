@@ -18,7 +18,7 @@ function toggleItem(e) {
   var items = parent.querySelector('.items');
 
   if (e.which === 1 && items.classList.contains('grayscale')) items.classList.remove('grayscale');
-  if (e.which === 3 && !items.classList.contains('grayscale')) items.classList.add('grayscale');
+  else if (e.which === 1 && !items.classList.contains('grayscale')) items.classList.add('grayscale');
 
   checkGoMode();
 };
@@ -33,7 +33,7 @@ function checkGoMode() {
 
   if (goMode) {
     unacquiredItems.forEach(function (item) {
-      console.log(item.children[0].getAttribute('src'));
+      // console.log(item.children[0].getAttribute('src'));
       if (goMode) {
         if (item.children[0].getAttribute('src') === 'images/items/wavebeam.png') goMode = false;
         if (item.children[0].getAttribute('src') === 'images/items/icebeam.png') goMode = false;
@@ -43,7 +43,7 @@ function checkGoMode() {
     });
   }
 
-  console.log(goMode);
+  // console.log(goMode);
 
   if (goMode && goModeElement.classList.contains('grayscale')) goModeElement.classList.remove('grayscale');
   else if (!goMode) goModeElement.classList.add('grayscale');
